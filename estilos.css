@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img/pexels-ingo-joseph-2618794.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+:root{
+    --color-fuente: #efe5e5;
+}
+p{
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#titulo{
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: var(--color-fuente);
+    font-size: min(4vw,20px);
+    text-shadow: 1px 0px 1px #373636,1px 1px 1px #373636, 2px 1px 1px #373636, 1px 2px 1px #373636, 3px 2px 1px #373636, 2px 3px 1px #373636, 4px 3px 1px #373636, 3px 4px 1px #373636, 5px 4px 1px #373636, 4px 5px 1px #373636, 6px 5px 1px #373636, 5px 6px 1px #373636, 7px 6px 1px #373636;
+}
+#containerPadre{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 2px 3px 30px 11px rgba(229,219,219,0.75);
+    -webkit-box-shadow: 2px 3px 30px 11px rgba(229,219,219,0.75);
+    -moz-box-shadow: 2px 3px 30px 11px rgba(229,219,219,0.75);
+}
+#containerLeft{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    width: 50%;
+    height: 100%;
+    background-color: #020251;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 4px solid white;
+    margin-right: 2px;
+    border: 4px solid white;
+    font-size: 1.3em;
+}
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid whitesmoke;
+    height: 120px;
+    color: var(--color-fuente);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.imagenLeft{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.imagenLeft:hover{
+    filter: contrast(40%);
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-fuente);
+    height: 140px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-left: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.productos:hover{
+    background-image: url("img/tennis-gd482eff16_640.jpg");
+    color: #020251;
+}
+
+.reglas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 120px;
+    border-left: 3px solid rgb(244, 244, 247);
+    color: var(--color-fuente);
+    transition: filter 1.2s ease;
+}
+.reglasParrafo{
+    position: absolute;
+    cursor: pointer;
+}
+.imgReglas{
+    filter: brightness(40%);
+}
+.reglas:hover{
+    filter: brightness(35%);
+}
+.reserva{
+    display: flex;
+    border-top: 3px solid white;
+    color: var(--color-fuente);
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+.reserva:hover{
+    background-image: linear-gradient(to top, #0073b4, #00579e, #003c86, #00216c, #020251);
+}
+#containerRight{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    width: 50%;
+    height: 100%;
+    background-color: #020251;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-left: 4px solid white;
+    border: 4px solid white;
+    font-size: 1.3em;
+}
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: var(--color-fuente);
+    height: 120px;
+    border-bottom: 3px solid white;
+    text-align: center;
+    cursor: pointer;
+}
+.horario:hover{
+    background-image: linear-gradient(to top, #0073b4, #00579e, #003c86, #00216c, #020251);
+}
+.imagenRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-left: 3px solid white;
+    
+}
+.imagenRight:hover{
+    filter: contrast(60%);
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-fuente);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 140px;
+    border-bottom: 3px solid white;
+    
+}
+table{
+    width: 300px;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+td:hover{
+    background-color: #eddede;
+    color: #00216c;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-fuente);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 120px;
+    
+}
+.blog:hover{
+    background-image: url("img/pexels-ingo-joseph-2618794.jpg");
+    background-size: cover;
+}
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-fuente);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    border-top: 3px solid white;
+    filter: grayscale(0);
+    transition: filter 1.2s ease-in;
+    
+}
+.ubiParrafo{
+    position: absolute;
+}
+.ubicacion:hover{
+    filter: grayscale(100%);
+}
+@media screen and (max-width: 768px) {
+    #containerPadre{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    p{
+        cursor: pointer;
+    }
+    
+    #containerLeft{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+        margin-bottom: 2px;
+    }
+    .bienvenida{
+        width: 100%;
+        height: 150px;
+        order: 0;
+    }
+    .bienvenida:hover{
+        background-image: linear-gradient(to top, #0073b4, #00579e, #003c86, #00216c, #020251);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    .imagenLeft{
+        width: 50%;
+        height: 220px;
+        order: 1;
+        border-right: 3px solid white;
+    }
+    
+    .reglas{
+        width: 50%;
+        height: 220px;
+        font-size: 0.8em;
+        order: 2;
+        border-left: 0;
+    }
+    .productos{
+        width: 100%;
+        height: 150px;
+        order: 3;
+        border-top: 3px solid white;
+    }
+    .reserva{
+        width: 100%;
+        height: 150px;
+        order: 4;
+    }
+    #containerRight{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+    }
+    .horario{
+        width: 100%;
+        height: 150px;
+        order: 0;
+    }
+    .imagenRight{
+        width: 50%;
+        height: 200px;
+        order: 1;
+        border-left: 0;
+        border-right: 3px solid white;
+    }
+    .blog{
+        width: 50%;
+        height: 200px;
+        order: 2;
+    }
+    .resultados{
+        width: 100%;
+        height: 150px;
+        order: 4;
+        border-bottom: 0;
+        border-top: 3px solid white;
+    }
+    .ubicacion{
+        width: 100%;
+        height: 150px;
+        order: 3;
+    }
+}
+@media screen and (max-width: 500px) {
+    .reglasParrafo{
+        font-size: 12px;
+        padding: 20px;
+    }
+}
